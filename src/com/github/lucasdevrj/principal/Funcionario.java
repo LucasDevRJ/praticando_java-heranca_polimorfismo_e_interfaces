@@ -15,7 +15,7 @@ public class Funcionario {
     }
 
     public void reajustarSalario(double percentual) {
-        salario += salario + (percentual / 100);
+        salario += salario * (percentual / 100);
         System.out.printf("\nNovo salário de %s é %.2f", nome, salario);
     }
 }
