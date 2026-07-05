@@ -6,5 +6,8 @@ public class Principal {
         gerente.exibirInformacoes();
         gerente.reajustarSalario(2);
         gerente.setBonus(1000);
+
+        Desenvolvedor desenvolvedor = new Desenvolvedor("Carla", 12000, "Back-end Java");
+        desenvolvedor.exibirInformacoes();
     }
 }
