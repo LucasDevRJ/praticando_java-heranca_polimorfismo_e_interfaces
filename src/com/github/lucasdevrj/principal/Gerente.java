@@ -8,11 +8,12 @@ public class Gerente extends Funcionario {
         super(nome, salario);
     }
 
-    public double getBonus() {
-        return bonus;
-    }
-
     public void setBonus(double bonus) {
         this.bonus = bonus;
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        System.out.printf("Gerente: %s - Salário %.2f - bônus: %.2f", nome, salario, bonus);
     }
 }
