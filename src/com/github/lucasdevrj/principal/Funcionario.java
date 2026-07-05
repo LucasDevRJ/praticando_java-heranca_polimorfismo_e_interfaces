@@ -1,6 +1,6 @@
 package com.github.lucasdevrj.principal;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     protected String nome;
     protected double salario;
@@ -23,4 +23,6 @@ public class Funcionario {
         salario += 500;
         System.out.printf("\nSalário com dissídio de %s é %.2f", nome, salario);
     }
+
+    public abstract void calcularPLR();
 }
